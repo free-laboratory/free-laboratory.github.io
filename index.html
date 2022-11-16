@@ -31,7 +31,7 @@ title: Home
         {% if slide.Type == "1_photo" and slide.Show == "TRUE" %}
           {% assign imageLoc = "/assets/images/home/" | append: slide.Location %}
           <div class="item">
-            <img class="center-block" src="{{ imageLoc }}" alt="{{ slide.Alt }}}" style="height:640px;">
+            <img class="center-block" src="{{ imageLoc }}" alt="{{ imageLoc }}" style="height:640px;">
             <div class="carousel-caption">
               <h3>{{ slide.Title }}</h3>
               <p>{{ slide.Description }}</p>

@@ -34,7 +34,7 @@ permalink: /people/
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
-      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag %}
+      {% assign pageLoc = page.url | append: person.Tag %}
       <div class="col-sm-6">
         <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
         <h4>{{ person.Title }}</h4>
@@ -55,7 +55,7 @@ permalink: /people/
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
-      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag %}
+      {% assign pageLoc = page.url | append: person.Tag %}
       <div class="col-sm-6">
         <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
         <h4>{{ person.Title }}</h4>
@@ -75,7 +75,7 @@ permalink: /people/
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
-      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag %}
+      {% assign pageLoc = page.url | append: person.Tag %}
       <div class="col-sm-6">
         <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
         <h4>{{ person.Title }}</h4>
@@ -95,7 +95,7 @@ permalink: /people/
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
-      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag %}
+      {% assign pageLoc = page.url | append: person.Tag %}
       <div class="col-sm-6">
         <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
         <h4>{{ person.Title }}</h4>
