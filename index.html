@@ -29,7 +29,7 @@ title: Home
 
       {% for slide in site.data.home %}
         {% if slide.Type == "1_photo" and slide.Show == "TRUE" %}
-          {% assign imageLoc = "/assets/images/horm/" | append: slide.Location %}
+          {% assign imageLoc = "/assets/images/homepage/" | append: slide.Location %}
           <div class="item">
             <img class="center-block" src="{{ imageLoc }}" alt="{{ imageLoc }}" style="height:640px;">
             <div class="carousel-caption">

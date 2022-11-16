@@ -34,6 +34,8 @@
   position: relative;
   padding-top: 30px;
   padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
 }
 .page-head a {
   position: absolute;
@@ -41,6 +43,11 @@
   transform: translateY(-50%);
 }
 
+/* for horizontal centering images in a div */
+.centered {
+  display: flex;
+  justify-content: center;
+}
 
 /* adjust the caption format for images in carousel */
 .carousel-caption {
