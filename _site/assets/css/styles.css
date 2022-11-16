@@ -1,0 +1,74 @@
+.jumbotron {
+  background-color: white;
+  padding-bottom: 0px;
+}
+
+.nav {
+  font-size: 12pt;
+  color: black;
+  background-color: white;
+}
+
+.navbar {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.nav-justified {
+    color: black;
+    background-color: white;
+}
+
+.address {
+  color: #aaaaaa;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+}
+
+/* for vertical centering images in page header */
+.page-head {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.page-head a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* adjust the caption format for images in carousel */
+.carousel-caption {
+  color: white;
+}
+
+.carousel-caption h3 {
+  text-align: left;
+}
+
+.carousel-caption p {
+  text-align: left;
+}
+
+.sizer {
+  width: 850px;
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.carousel-control {
+  height: 26%;
+  top: 40%;
+  width: 80px;
+  border-radius: 40px;
+}
+
+#rcorners {
+  border-radius: 12px;
+}

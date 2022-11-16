@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-3">
+      {% assign imageLoc = "/assets/images/" | append: page.Image %}
+      <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+    </div>
+    <div class="col-sm-6">
+      <h3><a href=" {{ pageLoc }} ">{{ page.Name }}</a></h3>
+      <h4>{{ page.Title }}</h4>
+      <h5>{{ page.Tag }}@umich.edu</h5>
+      <p>{{ page.Description }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-9">
+      <h5>Publications</h5>
+      <ul>
+        {% for paper in site.data.publications %}
+          {% if paper.Tags contains page.Tag %}
+            <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</div>

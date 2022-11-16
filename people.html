@@ -1,0 +1,110 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+<div class="container">
+
+<!-- Professors -->
+{% for person in site.data.team %}
+  {% if person.TYPE == "A_Prof" and person.Show == "TRUE" %}
+    <div class="row">
+      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      <div class="col-sm-3">
+        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+      </div>
+      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag | append: ".html" %}
+      <div class="col-sm-6">
+        <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
+        <h4>{{ person.Title }}</h4>
+        <h5>{{ person.Tag }}@umich.edu</h5>
+        <p>{{ person.Description }}</p>
+      </div>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+
+
+<!-- PostDocs -->
+{% for person in site.data.team %}
+  {% if person.TYPE == "B_PostDoc" and person.Show == "TRUE" %}
+    <div class="row">
+      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      <div class="col-sm-3">
+        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+      </div>
+      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag | append: ".html" %}
+      <div class="col-sm-6">
+        <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
+        <h4>{{ person.Title }}</h4>
+        <h5>{{ person.Tag }}@umich.edu</h5>
+        <p>{{ person.Description }}</p>
+      </div>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+
+
+<!-- PhD students -->
+{% for person in site.data.team %}
+  {% if person.TYPE == "C_PhD" and person.Show == "TRUE" %}
+    <div class="row">
+      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      <div class="col-sm-3">
+        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+      </div>
+      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag | append: ".html" %}
+      <div class="col-sm-6">
+        <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
+        <h4>{{ person.Title }}</h4>
+        <h5>{{ person.Tag }}@umich.edu</h5>
+        <p>{{ person.Description }}</p>
+      </div>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+
+<!-- Master students -->
+{% for person in site.data.team %}
+  {% if person.TYPE == "D_Master" and person.Show == "TRUE" %}
+    <div class="row">
+      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      <div class="col-sm-3">
+        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+      </div>
+      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag | append: ".html" %}
+      <div class="col-sm-6">
+        <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
+        <h4>{{ person.Title }}</h4>
+        <h5>{{ person.Tag }}@umich.edu</h5>
+        <p>{{ person.Description }}</p>
+      </div>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+
+<!-- Undergrad students -->
+{% for person in site.data.team %}
+  {% if person.TYPE == "E_Ugrad" and person.Show == "TRUE" %}
+    <div class="row">
+      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      <div class="col-sm-3">
+        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+      </div>
+      {% assign pageLoc = site.url | append: "/people/" | append: person.Tag | append: ".html" %}
+      <div class="col-sm-6">
+        <h3><a href=" {{ pageLoc }} ">{{ person.Name }}</a></h3>
+        <h4>{{ person.Title }}</h4>
+        <h5>{{ person.Tag }}@umich.edu</h5>
+        <p>{{ person.Description }}</p>
+      </div>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+
+</div>

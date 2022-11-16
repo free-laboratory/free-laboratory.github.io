@@ -1,0 +1,45 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<div class="container">
+
+  <h4>Preprints</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "03_Preprint" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Journal Papers and Book Chapters</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "01_Journal" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Conference Papers and Abstracts</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "02_Conference" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Technical Reports</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "03_TechReport" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</div>
