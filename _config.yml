@@ -37,6 +37,11 @@ page_gen:
     template: profile
     name: Tag
     dir: people
+    index_files: true
+
+# make sure the generated pages are included
+include: [ people ]
+safe: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
