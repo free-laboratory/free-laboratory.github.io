@@ -33,7 +33,7 @@
 .page-head {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -43,10 +43,63 @@
   transform: translateY(-50%);
 }
 
+/* for right aligning things in page header */
+.page-head-right {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: right;
+}
+.page-head-right a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* for vertical centering images in page footer */
+.page-foot {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/* for left aligning images in a div */
+.leftered {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* for right aligning images in a div */
+.rightered {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* for horizontal centering images in a div */
 .centered {
   display: flex;
   justify-content: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.center-text {
+  text-align: center;
 }
 
 /* adjust the caption format for images in carousel */
@@ -76,6 +129,28 @@
   border-radius: 40px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
 #rcorners {
   border-radius: 12px;
+}
+
+#logos {
+  max-height: 50px;
+}
+
+#research {
+  height: 300px;
+  width: auto;
+  max-width: 90%;
+}
+
+/* environment for bibtex entries */
+.bibentry {
+  white-space: pre-wrap;
 }

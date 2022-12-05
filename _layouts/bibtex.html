@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="page">
+
+  {% assign lenm1 = page.bibtex.size | minus: 2 %}
+  <div class="bibentry"><p>{{ page.bibtex | slice: 1 , lenm1 }}</p></div>
+
+</div>

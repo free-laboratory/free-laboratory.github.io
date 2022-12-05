@@ -1,0 +1,16 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+
+<!-- <h3>News</h3> -->
+  <ul>
+  {% for event in site.data.news reversed %}
+  {% if event.Show == "TRUE" %}
+    <li> <b>{{event.title}}</b> ({{event.date}}) <br> {{event.description}}
+         {% if event.link %} [<a href="{{ event.link }}" target="_blank">{{event.linktext}}</a>] {% endif %}
+         {% if event.link2 %} [<a href="{{ event.link2 }}" target="_blank">{{event.linktext2}}</a>] {% endif %}
+  {% endif %}
+  {% endfor %}
+  </ul>

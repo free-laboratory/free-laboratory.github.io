@@ -1,0 +1,112 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<!-- <div class="container">
+
+  <h4>Preprints</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "03_Preprint" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Journal Papers and Book Chapters</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "01_Journal" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Conference Papers and Abstracts</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "02_Conference" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Technical Reports</h4>
+  <ul>
+    {% for paper in site.data.publications %}
+      {% if paper.Type == "03_TechReport" %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</div> -->
+
+
+<div class="container">
+
+  {% assign showpreprints = true %}
+  {% for paper in site.data.publications reversed %}
+  {% if paper.Type == "03_Preprint" and paper.Show == "TRUE" %}
+    {% if showpreprints %}
+      <h4>Preprints</h4>
+      {% assign showpreprints = false %}
+    {% endif %}
+    <ul>
+      {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
+      <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
+        {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+        {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
+        {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
+        {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
+      </li>
+    </ul>
+  {% endif %}
+  {% endfor %}
+
+  <h4>Journal Papers</h4>
+  <ul>
+    {% for paper in site.data.publications reversed %}
+      {% if paper.Type == "01_Journal" and paper.Show == "TRUE" %}
+        {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
+          {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
+          {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h4>Conference Papers</h4>
+  <ul>
+    {% for paper in site.data.publications reversed %}
+      {% if paper.Type == "02_Conference" and paper.Show == "TRUE" %}
+        {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
+          {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
+          {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- <h4>Workshop and Meeting Presentations</h4>
+  <ul>
+    {% for paper in site.data.publications reversed %}
+      {% if paper.Type == "04_Presentation" and paper.Show == "TRUE" %}
+      {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
+          {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
+          {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul> -->

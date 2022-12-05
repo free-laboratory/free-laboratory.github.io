@@ -19,10 +19,10 @@ layout: default
 
   <div class="row">
     <div class="col-sm-9">
-      <h5>Publications</h5>
+      <h4>Publications</h4>
       <ul>
         {% for paper in site.data.publications %}
-          {% if paper.Tags contains page.Tag %}
+          {% if paper.atags contains page.Tag %}
             <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
           {% endif %}
         {% endfor %}

@@ -1,0 +1,79 @@
+---
+layout: default
+title: Research
+permalink: /research/
+---
+
+<!-- {% assign counter = true %} -->
+<!-- {% for project in site.data.research %}
+<div class="container">
+  <h3>{{ project.name }}</h3>
+  <br/>
+  <div class="row">
+    {% if counter %}
+      {% assign counter = false %}
+      <div class="col-md-8">
+        <p>
+          {{ project.description }}
+          {% for paper in site.data.publications %}
+            {% if paper.category == project.category and paper.Show == "TRUE" %}[<a href="{{ paper.url }}" target="_blank">{{ paper.Tag }}</a>]{% endif %}
+          {% endfor %}
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="/assets/images/research/{{ project.image }}" alt="project.image">
+      </div>
+    {% else %}
+      {% assign counter = true %}
+      <div class="col-md-4">
+        <img src="/assets/images/research/{{ project.image }}" alt="project.image">
+      </div>
+      <div class="col-md-8">
+        <p>
+          {{ project.description }}
+          {% for paper in site.data.publications %}
+            {% if paper.category == project.category and paper.Show == "TRUE" %}[<a href="{{ paper.url }}" target="_blank">{{ paper.Tag }}</a>]{% endif %}
+          {% endfor %}
+        </p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+<hr>
+{% endfor %} -->
+
+{% assign counter = true %}
+{% for project in site.data.research %}
+<div class="container">
+  {% if counter %}
+    {% assign counter = false %}
+  <br/>
+  <div class="row">
+      <div class="col-md-6 center-text">
+        <h3>{{ project.name }}</h3>
+        <img class="center-block" src="/assets/images/research/{{ project.image }}" alt="project.image" id="research">
+        <br/>
+        <p>
+          {{ project.description }}
+          {% for paper in site.data.publications %}
+            {% if paper.category == project.category and paper.Show == "TRUE" %}[<a href="{{ paper.url }}" target="_blank">{{ paper.Tag }}</a>]{% endif %}
+          {% endfor %}
+        </p>
+      </div>
+    {% else %}
+      {% assign counter = true %}
+      <div class="col-md-6 center-text">
+        <h3>{{ project.name }}</h3>
+        <img class="center-block" src="/assets/images/research/{{ project.image }}" alt="project.image" id="research">
+        <br/>
+        <p>
+          {{ project.description }}
+          {% for paper in site.data.publications %}
+            {% if paper.category == project.category and paper.Show == "TRUE" %}[<a href="{{ paper.url }}" target="_blank">{{ paper.Tag }}</a>]{% endif %}
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
