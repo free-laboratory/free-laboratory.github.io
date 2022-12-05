@@ -136,15 +136,15 @@ img {
   border-radius: 5px;
 }
 
-#rcorners {
+.rcorners {
   border-radius: 12px;
 }
 
-#logos {
+.logos {
   max-height: 50px;
 }
 
-#research {
+.research {
   height: 300px;
   width: auto;
   max-width: 90%;
