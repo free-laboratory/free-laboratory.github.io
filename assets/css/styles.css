@@ -136,6 +136,11 @@ img {
   border-radius: 5px;
 }
 
+.dont-squish {
+  height: auto;
+  width: auto;
+}
+
 .rcorners {
   border-radius: 12px;
 }
