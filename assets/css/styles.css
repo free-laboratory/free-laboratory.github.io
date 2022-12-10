@@ -152,7 +152,8 @@ img {
 }
 
 .logos {
-  max-height: 50px;
+  max-height: 40px;
+  border-radius: 12px;
 }
 
 .research {
