@@ -6,7 +6,7 @@ layout: default
 
   <div class="row">
     <div class="col-sm-3">
-      {% assign imageLoc = "/assets/images/" | append: page.Image %}
+      {% assign imageLoc = "/assets/images/people/" | append: page.Image %}
       <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
     </div>
     <div class="col-sm-6">
@@ -17,16 +17,26 @@ layout: default
     </div>
   </div>
 
+{% assign showpubs = true %}
   <div class="row">
     <div class="col-sm-9">
-      <h4>Publications</h4>
+      {% for paper in site.data.publications reversed %}
+      {% if paper.atags contains page.Tag and paper.Show == "TRUE" %}
+      {% if showpubs %}
+        <h4>Publications</h4>
+        {% assign showpubs = false %}
+      {% endif %}
       <ul>
-        {% for paper in site.data.publications %}
-          {% if paper.atags contains page.Tag %}
-            <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}. </li>
-          {% endif %}
-        {% endfor %}
+        {% assign bibtexLoc = site.baseurl | append:"publications/" | append: "bibtex/" | append: paper.Tag %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
+          {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
+          {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
+        </li>
       </ul>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 

@@ -20,6 +20,12 @@
     background-color: white;
 }
 
+.nav-custom {
+  height: 100px;
+  color: black;
+  background-color: white;
+}
+
 .address {
   color: #aaaaaa;
 }
@@ -152,7 +158,8 @@ img {
 .research {
   height: 300px;
   width: auto;
-  max-width: 90%;
+  max-width: 100%;
+  border: 1px solid black;
 }
 
 /* environment for bibtex entries */

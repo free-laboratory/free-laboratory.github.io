@@ -3,13 +3,15 @@ layout: default
 title: People
 permalink: /people/
 ---
+{% assign people_alphabetical = site.data.team | sort: "Name" %}
+
 <div class="container">
 
 <!-- Professors -->
-{% for person in site.data.team %}
+{% for person in people_alphabetical %}
   {% if person.TYPE == "A_Prof" and person.Show == "TRUE" %}
     <div class="row">
-      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
@@ -31,10 +33,10 @@ permalink: /people/
 
 
 <!-- PostDocs -->
-{% for person in site.data.team %}
+{% for person in people_alphabetical %}
   {% if person.TYPE == "B_PostDoc" and person.Show == "TRUE" %}
     <div class="row">
-      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
@@ -56,10 +58,10 @@ permalink: /people/
 
 
 <!-- PhD students -->
-{% for person in site.data.team %}
+{% for person in people_alphabetical %}
   {% if person.TYPE == "C_PhD" and person.Show == "TRUE" %}
     <div class="row">
-      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
@@ -80,10 +82,10 @@ permalink: /people/
 {% endfor %}
 
 <!-- Master students -->
-{% for person in site.data.team %}
+{% for person in people_alphabetical %}
   {% if person.TYPE == "D_Master" and person.Show == "TRUE" %}
     <div class="row">
-      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
@@ -104,10 +106,10 @@ permalink: /people/
 {% endfor %}
 
 <!-- Undergrad students -->
-{% for person in site.data.team %}
+{% for person in people_alphabetical %}
   {% if person.TYPE == "E_Ugrad" and person.Show == "TRUE" %}
     <div class="row">
-      {% assign imageLoc = "/assets/images/" | append: person.Image %}
+      {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
         <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
       </div>
@@ -129,20 +131,35 @@ permalink: /people/
 
 <!-- Alumni -->
 {% assign showalumni = true %}
-{% for person in site.data.team %}
-  {% if person.TYPE == "F_Alum" and person.Show == "TRUE" %}
+{% for person in people_alphabetical %}
+  {% if person.Show == "ALUMNI" %}
     {% if showalumni %}
       <h3>Alumni</h3>
       {% assign showalumni = false %}
     {% endif %}
     <div class="row">
-      <div class="col-sm-12">
+      <!-- <div class="col-sm-12">
         {% if person.Website %}
           <h4><a href="{{ person.Website }}">{{ person.Name }}</a> &nbsp;&nbsp; - &nbsp;&nbsp; {{ person.Title }}</h4>
         {% else %}
           <h4>{{ person.Name }} &nbsp;&nbsp; - &nbsp;&nbsp; {{ person.Title }}</h4>
         {% endif %}
+      </div> -->
+      {% if person.Website %}
+        <div class="col-sm-3">
+          <h4><a href="{{ person.Website }}">{{ person.Name }}</a></h4>
+        </div>
+        <div class="col-sm-9">
+          <h4>{{ person.Title }}</h4>
+        </div>
+      {% else %}
+      <div class="col-sm-3">
+        <h4>{{ person.Name }}</h4>
       </div>
+      <div class="col-sm-9">
+        <h4>{{ person.Title }}</h4>
+      </div>
+      {% endif %}
     </div>
   {% endif %}
 {% endfor %}
