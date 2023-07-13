@@ -1,0 +1,169 @@
+.jumbotron {
+  background-color: white;
+  padding-bottom: 0px;
+}
+
+.nav {
+  font-size: 11pt;
+  color: black;
+  background-color: white;
+}
+
+.navbar {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.nav-justified {
+    color: black;
+    background-color: white;
+}
+
+.nav-custom {
+  height: 100px;
+  color: black;
+  background-color: white;
+}
+
+.address {
+  color: #aaaaaa;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+}
+
+/* for vertical centering images in page header */
+.page-head {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.page-head a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* for right aligning things in page header */
+.page-head-right {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: right;
+}
+.page-head-right a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* for vertical centering images in page footer */
+.page-foot {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/* for left aligning images in a div */
+.leftered {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* for right aligning images in a div */
+.rightered {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* for horizontal centering images in a div */
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* adjust the caption format for images in carousel */
+.carousel-caption {
+  color: white;
+}
+
+.carousel-caption h3 {
+  text-align: left;
+}
+
+.carousel-caption p {
+  text-align: left;
+}
+
+.sizer {
+  width: 850px;
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.carousel-control {
+  height: 26%;
+  top: 40%;
+  width: 80px;
+  border-radius: 40px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+.dont-squish {
+  height: auto;
+  width: auto;
+}
+
+.rcorners {
+  border-radius: 12px;
+}
+
+.logos {
+  max-height: 40px;
+  border-radius: 12px;
+}
+
+.research {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+/* environment for bibtex entries */
+.bibentry {
+  white-space: pre-wrap;
+}

@@ -30,6 +30,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+destination: docs/    # publish here instead of _site folder so github pages can publish from it
 
 # this is used for generating the individual team member pages
 page_gen:
@@ -46,7 +47,8 @@ page_gen:
 
 # make sure the generated pages are included
 include: [ people ]
-safe: false
+safe: falce
+disable_disk_cache: true    # trying to fix problem of _site not being updated on build
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
