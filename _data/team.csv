@@ -1,8 +1,12 @@
 Name,Show,Tag,Detailed Page Name,Title,Description,Image,Additional HTML input,Comment,TYPE,Website
-Daniel Bruder,TRUE,bruderd,dan_bruder,"Assistant Professor, Mechanical Engineering",,bruderd.jpg,,,A_Prof,http://danielbruder.com
+Daniel Bruder,TRUE,bruderd,dan_bruder,"Assistant Professor, Mechanical Engineering",,bruderd.jpg,,,A_Prof,https://danielbruder.com
 Audrey Sedal,FALSE,asedal,audrey_sedal,"PhD Student, Mechanical Engineering",Audrey is a PhD Candidate in Mechanical Engineering with an SB in Mechanical Engineering at the Massachusetts Institute of Technology. She is interested in mechanics with a focus toward its applications in modeling soft robots.,asedal.jpg,,,C_PhD,
 Fake Ugrad,FALSE,fake_ugrad,,"Undergraduate Student, Mechanical Engineering",,missing.png,,,E_Ugrad,
 Fake Phd,FALSE,fake_phd,,"PhD Student, Mechanical Engineering",,missing.png,,,C_PhD,
 Fake Postdoc,FALSE,fake_postdoc,,Postdoctoral Fellow,,missing.png,,,B_PostDoc,
 Fake Masters,FALSE,fake_masters,,"Masters Student, Mechanical Engineering",,missing.png,,,D_Master,
 This could be you!,FALSE,your_name,,,"Do you have a strong interest in design, fabrication, modeling, and control of non-traditional mechanisms and robotic systems? If so, email bruderd@umich.edu with the subject line ""Interested in joining FREE Lab"".",missing.png,,,C_PhD,
+Andy Nguyen,TRUE,andyng,,"Undergraduate Student, Engineering",,andyng.jpg,,,E_Ugrad,
+Dong Heon Han,TRUE,dongheon,,"Masters Student, Mechanical Engineering",,dongheon.jpeg,,,D_Master,
+Mayank Navneet Mehta,TRUE,mayanknm,,"Masters Student, Mechanical Engineering",,mayanknm.jpg,,,D_Master,https://cad2controlrobots.wordpress.com/
+Runze Zuo,TRUE,zuorunze,,"PhD Student, Mechanical Engineering",,zuorunze.jpg,,,C_PhD,https://www.runzezuo.com

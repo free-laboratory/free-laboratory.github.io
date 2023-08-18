@@ -47,7 +47,7 @@ page_gen:
 
 # make sure the generated pages are included
 include: [ people ]
-safe: falce
+safe: false
 disable_disk_cache: true    # trying to fix problem of _site not being updated on build
 
 # Exclude from processing.
