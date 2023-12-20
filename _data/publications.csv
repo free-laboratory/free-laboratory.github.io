@@ -108,5 +108,14 @@ D. Bruder,TRUE,robosoft2020,Leveraging Data and the Koopman Operator to Build Co
   year={2021},
   publisher={IEEE}
 }""",,actuators,
-"D. Bruder, M. Graule, C. Teeple, R.J. Wood",FALSE,scirob2023,Increasing the Payload Capacity of Soft Underactuated Robot Arms via Selective Joint Stiffening,Science Robotics,2022,01_Journal,,,,under review,design,bruderd
 "Y.J. Martin, D. Bruder, R.J. Wood",TRUE,iros2023,A Proprioceptive Method for Soft Robots using Inertial Measurement Units,IEEE International Conference on Intelligent Robots and Systems (IROS),2022,02_Conference,/assets/pdfs/Martin_A_Proprioceptive_Method_for_Soft_Robots_Using_Inertial_Measurement_Units.pdf,,,,design,bruderd
+"D. Bruder, M. Graule, C. Teeple, R.J. Wood",TRUE,scirob2023,Increasing the Payload Capacity of Soft Underactuated Robot Arms via Selective Joint Stiffening,Science Robotics,2023,01_Journal,,,"""@article{bruder2023increasing,
+  title={Increasing the payload capacity of soft robot arms by localized stiffening},
+  author={Bruder, Daniel and Graule, Moritz A and Teeple, Clark B and Wood, Robert J},
+  journal={Science Robotics},
+  volume={8},
+  number={81},
+  pages={eadf9001},
+  year={2023},
+  publisher={American Association for the Advancement of Science}
+}""",,design,bruderd
