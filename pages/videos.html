@@ -14,24 +14,23 @@ permalink: /videos/
 {% for video in site.data.videos %}
   {% assign position = forloop.index0 | modulo: 3 %}
   {% if position == 0  %}
-    <!-- {% increment count %} -->
-  <br/>
   <div class="row">
       <div class="col-sm-4">
+        <br/>
         <div class="videoWrapper">
           <iframe class="embed-responsive-item" src="{{ video.Location }}"></iframe>
         </div> 
       </div>
   {% elsif position == 1 %}
-      <!-- {% increment count %} -->
       <div class="col-sm-4">
+        <br/>
         <div class="videoWrapper">
           <iframe class="embed-responsive-item" src="{{ video.Location }}"></iframe>
         </div>
       </div>
   {% elsif position == 2 %}
-      <!-- {% increment count %} -->
       <div class="col-sm-4">
+        <br/>
         <div class="videoWrapper">
           <iframe class="embed-responsive-item" src="{{ video.Location }}"></iframe>
         </div>
