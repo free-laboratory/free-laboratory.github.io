@@ -33,8 +33,10 @@ permalink: /people/
 
 
 <!-- PostDocs -->
+{% assign first_one = true %}
 {% for person in people_alphabetical %}
   {% if person.TYPE == "B_PostDoc" and person.Show == "TRUE" %}
+  {% if first_one %} <h3>Postdocs</h3> {% endif %}{% assign first_one = false %}
     <div class="row">
       {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
@@ -58,8 +60,10 @@ permalink: /people/
 
 
 <!-- PhD students -->
+{% assign first_one = true %}
 {% for person in people_alphabetical %}
   {% if person.TYPE == "C_PhD" and person.Show == "TRUE" %}
+  {% if first_one %} <h3>PhD Students</h3> {% endif %}{% assign first_one = false %}
     <div class="row">
       {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
@@ -82,8 +86,10 @@ permalink: /people/
 {% endfor %}
 
 <!-- Master students -->
+{% assign first_one = true %}
 {% for person in people_alphabetical %}
   {% if person.TYPE == "D_Master" and person.Show == "TRUE" %}
+  {% if first_one %} <h3>Masters Students</h3> {% endif %}{% assign first_one = false %}
     <div class="row">
       {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
@@ -106,8 +112,10 @@ permalink: /people/
 {% endfor %}
 
 <!-- Undergrad students -->
+{% assign first_one = true %}
 {% for person in people_alphabetical %}
   {% if person.TYPE == "E_Ugrad" and person.Show == "TRUE" %}
+  {% if first_one %} <h3>Undergraduate Students</h3> {% endif %}{% assign first_one = false %}
     <div class="row">
       {% assign imageLoc = "/assets/images/people/" | append: person.Image %}
       <div class="col-sm-3">
