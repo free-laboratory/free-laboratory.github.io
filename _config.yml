@@ -44,11 +44,19 @@ page_gen:
     name: Tag
     dir: publications/bibtex
     index_files: true
+  - data: research
+    template: topic
+    name: category
+    dir: research
+    index_files: true
 
 # make sure the generated pages are included
 include: [ people ]
 safe: false
 disable_disk_cache: true    # trying to fix problem of _site not being updated on build
+
+include: [ research ]
+safe: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

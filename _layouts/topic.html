@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-3">
+      {% assign imageLoc = "/assets/images/research/" | append: page.image %}
+      <img src="{{ imageLoc }}" alt="{{ page.category }}" width=100%>
+    </div>
+    <div class="col-sm-6">
+      <h3><a href=" {{ pageLoc }} ">{{ page.topic }}</a></h3>
+      <p>{{ page.description }}</p>
+    </div>
+  </div>
+
+{% assign showpubs = true %}
+  <div class="row">
+    <div class="col-sm-9">
+      {% for paper in site.data.publications reversed %}
+      {% if paper.category contains page.category and paper.Show == "TRUE" %}
+      {% if showpubs %}
+        <h4>Publications</h4>
+        {% assign showpubs = false %}
+      {% endif %}
+      <ul>
+        {% assign bibtexLoc = site.baseurl | append:"publications/" | append: "bibtex/" | append: paper.Tag %}
+        <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
+          {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
+          {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
+        </li>
+      </ul>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
