@@ -5,19 +5,28 @@ layout: default
 <div class="container">
 
   <div class="row">
-    <div class="col-sm-3">
-      {% assign imageLoc = "/assets/images/research/" | append: page.image %}
-      <img src="{{ imageLoc }}" alt="{{ page.category }}" width=100%>
-    </div>
-    <div class="col-sm-6">
+    <div class="col-sm-12">
       <h3><a href=" {{ pageLoc }} ">{{ page.topic }}</a></h3>
-      <p>{{ page.description }}</p>
     </div>
   </div>
 
+  <div class="row">
+    <!-- <div class="col-sm-2"></div> -->
+    <div class="col-sm-6">
+      <!-- <h3><a href=" {{ pageLoc }} ">{{ page.topic }}</a></h3> -->
+      <p align="justify">{{ page.description }}</p>
+    </div>
+    <div class="col-sm-6">
+        {% assign imageLoc = "/assets/images/research/" | append: page.image %}
+        <img class="researchTopic center-block" src="{{ imageLoc }}" alt="{{ page.category }}" width=100%>
+    </div>
+    <!-- <div class="col-sm-2"></div> -->
+  </div>
+  
+
 {% assign showpubs = true %}
   <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-12">
       {% for paper in site.data.publications reversed %}
       {% if paper.category contains page.category and paper.Show == "TRUE" %}
       {% if showpubs %}

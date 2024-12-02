@@ -163,6 +163,12 @@ img {
   border: 1px solid black;
 }
 
+.researchTopic {
+  max-height: 450px;
+  width: auto;
+  border: 1px solid black;
+}
+
 /* environment for bibtex entries */
 .bibentry {
   white-space: pre-wrap;
