@@ -169,6 +169,15 @@ img {
   border: 1px solid black;
 }
 
+.researchCarousel {
+  object-fit: fill;
+  overflow: hidden;
+  width: auto;
+  aspect-ratio: 16/9;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
 /* environment for bibtex entries */
 .bibentry {
   white-space: pre-wrap;
