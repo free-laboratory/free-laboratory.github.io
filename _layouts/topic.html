@@ -95,7 +95,7 @@ layout: default
       <ul>
         {% assign bibtexLoc = site.baseurl | append:"publications/" | append: "bibtex/" | append: paper.Tag %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
-          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">link</a>]{% endif %}
           {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
           {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
