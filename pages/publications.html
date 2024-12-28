@@ -57,7 +57,7 @@ permalink: /publications/
     <ul>
       {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
       <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
-        {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+        {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">link</a>]{% endif %}
         {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
         {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
         {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
@@ -72,7 +72,7 @@ permalink: /publications/
       {% if paper.Type == "01_Journal" and paper.Show == "TRUE" %}
         {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
-          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">link</a>]{% endif %}
           {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
           {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}
@@ -87,7 +87,7 @@ permalink: /publications/
       {% if paper.Type == "02_Conference" and paper.Show == "TRUE" %}
         {% assign bibtexLoc = page.url | append: "bibtex/" | append: paper.Tag %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
-          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
+          {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">link</a>]{% endif %}
           {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
           {% if paper.award %} <b> *{{ paper.award }} </b> {% endif %}

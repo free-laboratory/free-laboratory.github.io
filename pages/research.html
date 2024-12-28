@@ -93,13 +93,13 @@ permalink: /research/
         {% assign pageLoc = page.url | append: project.category %}
         <h3><a href=" {{ pageLoc }} ">{{ project.topic }}</a></h3>
         <img class="research center-block" src="/assets/images/research/{{ project.image }}" alt="project.image">
-        <br/>
-        <p align="justify">
+        <!-- <br/> -->
+        <!-- <p align="justify">
           {{ project.description }}
           {% for paper in site.data.publications %}
             {% if paper.category == project.category and paper.Show == "TRUE" %}[<a href="{{ paper.url }}" target="_blank">{{ paper.Tag }}</a>]{% endif %}
           {% endfor %}
-        </p>
+        </p> -->
       </div>
     {% else %}
       {% assign counter = true %}
@@ -107,13 +107,13 @@ permalink: /research/
         {% assign pageLoc = page.url | append: project.category %}
         <h3><a href=" {{ pageLoc }} ">{{ project.topic }}</a></h3>
         <img class="research center-block" src="/assets/images/research/{{ project.image }}" alt="project.image">
-        <br/>
-        <p align="justify">
+        <!-- <br/> -->
+        <!-- <p align="justify">
           {{ project.description }}
           {% for paper in site.data.publications %}
             {% if paper.category == project.category and paper.Show == "TRUE" %}[<a href="{{ paper.url }}" target="_blank">{{ paper.Tag }}</a>]{% endif %}
           {% endfor %}
-        </p>
+        </p> -->
       </div>
     </div>
     {% endif %}
