@@ -15,7 +15,7 @@ Authors,Show,Tag,Title,Publication,Year,Type,url,video,bibtex,award,category,ata
   pages={5539--5544},
   year={2017},
   organization={IEEE}
-}""",,actuators,"asedal, bruderd",https://www.youtube.com/embed/awPEsqR4HII
+}""",,modeling,"asedal, bruderd",https://www.youtube.com/embed/awPEsqR4HII
 "D. Bruder, A. Sedal, J. Bishop-Moser, S. Kota, and R. Vasudevan",TRUE,mwrw2017,Model Based Control of Fiber Reinforced Elastofluidic Enclosures,Midwest Robotics Workshop (poster),2017,04_Presentation,,,,,,,
 "A. Sedal, D. Bruder, J. Bishop-Moser, R. Vasudevan, and S. Kota",TRUE,jmr2018,A Continuum Model for Fiber-Reinforced Soft Robot Actuators,Journal of Mechanisms and Robotics,2018,01_Journal,http://mechanismsrobotics.asmedigitalcollection.asme.org/article.aspx?articleid=2671216,,"""@article{sedal2018continuum,
   title={A Continuum Model for Fiber-Reinforced Soft Robot Actuators},
