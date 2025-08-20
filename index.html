@@ -118,3 +118,36 @@ title: Home
     </div>
   </div>
 </div>
+
+<!-- Current Opportunites and Solicitations -->
+<div style="display:none"> <!-- Suppresses this feature for now -->
+{% assign projects = site.data.opportunities | sort: "title" %}
+
+<div class="container">
+<h3>Opportunites</h3>
+{% for project in projects %}
+  {% if project.Show == "TRUE" %}
+    <div class="row">
+      <div class="col-sm-9">
+        <h4>{{ project.title }}</h4>
+        <h5>Project description:</h5>
+        <p>{{ project.description }}</p>
+        <h5>Desired skills: {{ project.skills }}</h5>
+        <h5>Desired start date: {{ project.start }}</h5>
+        <h5>Application deadline: {{ project.deadline }}</h5>
+        <h5>For questions, contact {{ project.contact }} ({{ project.email}}) </h5>
+        <h5><a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>APPLY HERE</b></a></h5>
+      </div>
+      <!-- <div class="col-sm-3">
+        {% if project.image %}
+        {% assign imageLoc = "/assets/images/opportunities/" | append: project.image %}
+        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
+        {% endif %}
+      </div> -->
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+</div>
+
+</div> <!-- Remove when ready to inveil this feature -->
