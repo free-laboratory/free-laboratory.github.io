@@ -120,22 +120,25 @@ title: Home
 </div>
 
 <!-- Current Opportunites and Solicitations -->
-<div style="display:none"> <!-- Suppresses this feature for now -->
+<!-- <div style="display:none"> Suppresses this feature for now -->
 {% assign projects = site.data.opportunities | sort: "title" %}
+{% assign projects_exist = false %}
 
 <div class="container">
-<h3>Opportunites</h3>
+<h4>Opportunites</h4>
 {% for project in projects %}
   {% if project.Show == "TRUE" %}
-    <div class="row">
+    {% assign projects_exist = true %}
+    <div class="row" style="border: 2px solid #000000; border-radius: 12px; padding: 10px 15px; background-color: #eeeeee; display: inline-block;">
       <div class="col-sm-9">
         <h4>{{ project.title }}</h4>
-        <h5>Project description:</h5>
-        <p>{{ project.description }}</p>
-        <h5>Desired skills: {{ project.skills }}</h5>
-        <h5>Desired start date: {{ project.start }}</h5>
-        <h5>Application deadline: {{ project.deadline }}</h5>
-        <h5>For questions, contact {{ project.contact }} ({{ project.email}}) </h5>
+        <p><b>Description:</b> {{ project.description }}</p>
+        <p><b>Desired skills:</b> {{ project.skills }}</p>
+        <p><b>Desired start date:</b> {{ project.start }}</p>
+        <p><b>Hours:</b> {{ project.hours }}</p>
+        <p><b>Compensation:</b> {{ project.compensation }}</p>
+        <p><b>Application deadline:</b> {{ project.deadline }}</p>
+        <p>For questions, contact {{ project.contact }} ({{ project.email}}) </p>
         <h5><a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>APPLY HERE</b></a></h5>
       </div>
       <!-- <div class="col-sm-3">
@@ -148,6 +151,13 @@ title: Home
     <br>
   {% endif %}
 {% endfor %}
+{% if projects_exist == false %}
+  <div class="row">
+    <div class="col-sm-12">
+      <p>We aren't soliciting applications for any specific projects at the moment, but if you would like to be considered for future openings please fill out the <a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>FREE Lab Interest Form</b></a>.</p>
+    </div>
+  </div>
+{% endif %}
 </div>
 
-</div> <!-- Remove when ready to inveil this feature -->
+<!-- </div> Remove when ready to inveil this feature -->
