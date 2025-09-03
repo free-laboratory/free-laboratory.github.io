@@ -252,3 +252,8 @@ img {
   width: 100%;
   height: 100%;
 }
+
+/* For vertically centering images on opportunities page */
+.op-row { display:flex; /* equal-height columns in BS3 */ }
+.op-col-img { display:flex; align-items:center; justify-content:center; }
+.op-col-img img { max-width:100%; height:auto; }

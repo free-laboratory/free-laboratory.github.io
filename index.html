@@ -114,7 +114,7 @@ title: Home
     </div> -->
     <div class="col-sm-12">
       <figure class="figure">
-        <img src="/assets/images/homepage/logo_simple_annotated.png" class="figure-img img-fluid center-block" alt="A generic square placeholder image with rounded corners in a figure." width=100%>
+        <img src="/assets/images/homepage/logo_simple_annotated.png" class="figure-img img-fluid center-block" alt="A generic square placeholder image with rounded corners in a figure." width=80%>
     </div>
   </div>
 </div>
@@ -125,11 +125,11 @@ title: Home
 {% assign projects_exist = false %}
 
 <div class="container">
-<h4>Opportunites</h4>
+<h4>Current Opportunites</h4>
 {% for project in projects %}
   {% if project.Show == "TRUE" %}
     {% assign projects_exist = true %}
-    <div class="row" style="border: 2px solid #000000; border-radius: 12px; padding: 10px 15px; background-color: #eeeeee; display: inline-block;">
+    <div class="row" style="border: 2px solid #000000; border-radius: 12px; padding: 10px 15px; background-color: #eeeeee; display: flex" >
       <div class="col-sm-9">
         <h4>{{ project.title }}</h4>
         <p><b>Description:</b> {{ project.description }}</p>
@@ -141,12 +141,10 @@ title: Home
         <p>For questions, contact {{ project.contact }} ({{ project.email}}) </p>
         <h5><a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>APPLY HERE</b></a></h5>
       </div>
-      <!-- <div class="col-sm-3">
-        {% if project.image %}
+      <div class="col-sm-3 op-col-img">
         {% assign imageLoc = "/assets/images/opportunities/" | append: project.image %}
-        <img src="{{ imageLoc }}" alt="{{ person.Tag }}" width=100%>
-        {% endif %}
-      </div> -->
+          <img src="{{ imageLoc }}" alt="{{ person.Tag }}" class="img-responsive">
+      </div>
     </div>
     <br>
   {% endif %}
