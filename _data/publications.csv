@@ -136,3 +136,4 @@ D. Bruder,TRUE,robosoft2020,Leveraging Data and the Koopman Operator to Build Co
   organization={IEEE}
 }""",,actuators,"zuorunze, dongheon, mayanknm, bruderd",https://www.youtube.com/embed/-GmToFqwnV0
 "D. Bruder, D. Bombara, R.J. Wood",TRUE,ijrr2024,A Koopman-based Residual Modeling Approach for the Control of a Soft Robot Arm,International Journal of Robotics Research (IJRR),2024,01_Journal,https://doi.org/10.1177/02783649241272114,https://youtu.be/AsY4AVqFPKE,,,koopcontrol,bruderd,https://www.youtube.com/embed/AsY4AVqFPKE
+"Y. Ma, D. Bruder",TRUE,ral2025_auxetic,A Variable-Stiffness Robotic Link Based on Rotating-Rectangle Auxetic Structures for Safe Human-Robot Interaction,IEEE Robotics and Automation Letters (Accepted),2025,01_Journal,,,,,design,"yitengma,bruderd",
