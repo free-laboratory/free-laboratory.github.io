@@ -39,7 +39,7 @@ title: Home
 
       <div class="item active">
         <img class="center-block" src="/assets/images/title.png" alt="FREE Lab" style="height:640px;">
-        <div class="carousel-caption">
+        <div class="custom-caption">
           <h3>Roahm Lab</h3>
           <p>Optimization is cool!</p>
         </div>
@@ -50,7 +50,7 @@ title: Home
           {% assign imageLoc = "/assets/images/homepage/" | append: slide.Location %}
           <div class="item">
             <img class="center-block" src="{{ imageLoc }}" alt="{{ imageLoc }}" style="height:640px;">
-            <div class="carousel-caption">
+            <div class="custom-caption">
               <h3>{{ slide.Title }}</h3>
               <p>{{ slide.Description }}</p>
             </div>
@@ -59,7 +59,7 @@ title: Home
         {% if slide.Type == "2_video" and slide.Show == "TRUE" %}
         <div class="item embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="{{ slide.Location }}" allowfullscreen></iframe>
-          <div class="carousel-caption">
+          <div class="custom-caption">
             <h3>{{ slide.Title }}</h3>
             <p>{{ slide.Description }}</p>
           </div>
