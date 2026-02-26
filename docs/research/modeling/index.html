@@ -139,11 +139,19 @@
             
             
             
+            
+            
+            
+            
+            
+            
               
-              <div class="item active embed-responsive embed-responsive-16by9">
+              <div class="item active">
                 
               
-                <iframe class="embed-responsive-item" src="https://youtube.com/embed/f63M8kvTyPY" allowfullscreen></iframe>
+                <div class="aspect-ratio-16-9">
+                  <iframe src="https://youtube.com/embed/f63M8kvTyPY" allowfullscreen></iframe>
+                </div>
                 <!-- <div class="carousel-caption"> -->
                   <!-- <h4><a target="_blank" href="https://ieeexplore.ieee.org/document/8793766">Nonlinear System Identification of Soft Robot Dynamics Using Koopman Operator Theory</a></h4>
                   <p>D. Bruder, C. D. Remy, and R. Vasudevan</p> -->
@@ -160,9 +168,11 @@
             
               
                
-              <div class="item aspect-ratio-16-9">
+              <div class="item">
               
-                <img  src="/assets/images/publications/force_parallel_frees_2018.png" alt="/assets/images/publications/force_parallel_frees_2018.png">
+                <div class="aspect-ratio-16-9">
+                  <img src="/assets/images/publications/force_parallel_frees_2018.png" alt="/assets/images/publications/force_parallel_frees_2018.png">
+                </div>
                 <div class="carousel-caption">
                   <h4><a target="_blank" href="https://ieeexplore.ieee.org/document/8419270">Force Generation by Parallel Combinations of Fiber-Reinforced Fluid-Driven Actuators</a></h4>
                   <!-- <p>D. Bruder, A. Sedal, R. Vasudevan, and C. D. Remy</p> -->
@@ -180,9 +190,11 @@
             
             
                
-              <div class="item embed-responsive embed-responsive-16by9">
+              <div class="item">
               
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/awPEsqR4HII" allowfullscreen></iframe>
+                <div class="aspect-ratio-16-9">
+                  <iframe src="https://www.youtube.com/embed/awPEsqR4HII" allowfullscreen></iframe>
+                </div>
                 <!-- <div class="carousel-caption"> -->
                   <!-- <h4><a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/7989653">Model Based Control of Fiber Reinforced Elastofluidic Enclosures</a></h4>
                   <p>D. Bruder, A. Sedal, J. Bishop-Moser, S. Kota, and R. Vasudevan</p> -->
@@ -215,6 +227,12 @@
 
   <div class="row">
     <div class="col-sm-12">
+      
+      
+      
+      
+      
+      
       
       
       
@@ -315,8 +333,6 @@
 
 
 <!-- Auto generate the correct number of indicators in the carousel with JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 <script defer>
   document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector("#myCarousel");
@@ -325,8 +341,8 @@
 
     items.forEach((item, index) => {
       const indicator = document.createElement("li");
-      indicator.setAttribute("data-bs-target", "#myCarousel");
-      indicator.setAttribute("data-bs-slide-to", index);
+      indicator.setAttribute("data-target", "#myCarousel");
+      indicator.setAttribute("data-slide-to", index);
 
       if (index === 0) {
         indicator.classList.add("active"); // Set the first indicator as active

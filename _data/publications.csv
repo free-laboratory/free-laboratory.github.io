@@ -67,7 +67,7 @@ D. Bruder,TRUE,towner2019,Modeling and Control of Soft Robots Using the Koopman 
   number={},
   pages={5068-5074},
   doi={10.1109/ICRA40945.2020.9197549}}""",,snakes,"bruderd, taliaym",https://youtube.com/embed/wCZSd0FNb5Y
-"D. Bruder, X. Fu, R. B. Gillespie, C. D. Remy, and R. Vasudevan",FALSE,arxiv2020,Koopman-based Control of a Soft Continuum Manipulator Under Variable Loading Conditions,IEEE Robotics and Automation Letters (Accepted),2021,03_Preprint,https://arxiv.org/pdf/2002.01407.pdf,https://youtu.be/g2yRUoPK40c,,,koopcontrol,bruderd,https://youtube.com/embed/g2yRUoPK40c
+"D. Bruder, X. Fu, R. B. Gillespie, C. D. Remy, and R. Vasudevan",FALSE,arxiv2020,Koopman-based Control of a Soft Continuum Manipulator Under Variable Loading Conditions,IEEE Robotics and Automation Letters,2021,03_Preprint,https://arxiv.org/pdf/2002.01407.pdf,https://youtu.be/g2yRUoPK40c,,,koopcontrol,bruderd,https://youtube.com/embed/g2yRUoPK40c
 D. Bruder,TRUE,robosoft2020,Leveraging Data and the Koopman Operator to Build Control-oriented Models of Soft Robots,Modeling Soft Robots: A Discussion on Capabilites and Limitations of Numerous Techniques,2020,04_Presentation,,,,,,bruderd,
 "D. Bruder, X. Fu, R. B. Gillespie, C. D. Remy, and R. Vasudevan",TRUE,tro2020,Data-driven Control of Soft Robots Using Koopman Operator Theory,IEEE Transactions on Robotics (TRO),2020,01_Journal,https://ieeexplore.ieee.org/document/9277915,https://www.youtube.com/watch?v=1-XSDGHKous,"""@ARTICLE{9277915,
   author={D. {Bruder} and X. {Fu} and R. B. {Gillespie} and C. D. {Remy} and R. {Vasudevan}},
@@ -136,5 +136,8 @@ D. Bruder,TRUE,robosoft2020,Leveraging Data and the Koopman Operator to Build Co
   organization={IEEE}
 }""",,actuators,"zuorunze, dongheon, mayanknm, bruderd",https://www.youtube.com/embed/-GmToFqwnV0
 "D. Bruder, D. Bombara, R.J. Wood",TRUE,ijrr2024,A Koopman-based Residual Modeling Approach for the Control of a Soft Robot Arm,International Journal of Robotics Research (IJRR),2024,01_Journal,https://doi.org/10.1177/02783649241272114,https://youtu.be/AsY4AVqFPKE,,,koopcontrol,bruderd,https://www.youtube.com/embed/AsY4AVqFPKE
-"Y. Ma, D. Bruder",TRUE,ral2025_auxetic,A Variable-Stiffness Robotic Link Based on Rotating-Rectangle Auxetic Structures for Safe Human-Robot Interaction,IEEE Robotics and Automation Letters (Accepted),2025,01_Journal,https://doi.org/10.1109/LRA.2025.3610264,,,,design,"yitengma,bruderd",
+"Y. Ma, D. Bruder",TRUE,ral2025_auxetic,A Variable-Stiffness Robotic Link Based on Rotating-Rectangle Auxetic Structures for Safe Human-Robot Interaction,IEEE Robotics and Automation Letters,2025,01_Journal,https://doi.org/10.1109/LRA.2025.3610264,https://youtu.be/iT-8C6RKSIA,,,design,"yitengma,bruderd",https://www.youtube.com/embed/iT-8C6RKSIA
 "R. Zuo,  D.H. Han, R. Li, S. Jamal, D. Bruder",TRUE,umarm2025,"UMArm: Untethered, Modular, Wearable, Soft Pneumatic Arm",(preprint),2025,01_Journal,https://arxiv.org/abs/2505.11476,,,,design,"zuorunze, dongheon, richieli, saimaj, bruderd",
+"A. Nguyen, M. Li, D. Bruder",TRUE,climber2026,A High-Payload Wall-Climbing Robot Using Passive Bistable Suction Cups,IEEE Conference on Robotics and Automation (ICRA) (accepted),2026,02_Conference,,,,,design,"andyng, richieli, bruderd",
+"N. Velimirovic, C. D. Remy, D. Bruder",TRUE,valves-icra2026,"Hybrid Membrane-Solenoid Valves for High-Flow, Precisely Controlled Soft Robotic Actuation",IEEE Conference on Robotics and Automation (ICRA) (accepted),2026,02_Conference,,,,,actuators,"nvelimir, bruderd",
+"S. Jamal, R. Zheng, D. Bruder",TRUE,origami-robosoft2026,Proprioceptive Origami Sleeves Using Embedded Fold Sensors,IEEE-RAS International Conference on Soft Robotics (RoboSoft),2026,02_Conference,,,,,design,"saimaj, ryanzhen,bruderd",

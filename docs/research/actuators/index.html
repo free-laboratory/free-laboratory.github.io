@@ -109,11 +109,19 @@
             
             
             
+            
+            
+            
+            
+            
+            
               
-              <div class="item active embed-responsive embed-responsive-16by9">
+              <div class="item active">
                 
               
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-GmToFqwnV0" allowfullscreen></iframe>
+                <div class="aspect-ratio-16-9">
+                  <iframe src="https://www.youtube.com/embed/-GmToFqwnV0" allowfullscreen></iframe>
+                </div>
                 <!-- <div class="carousel-caption"> -->
                   <!-- <h4><a target="_blank" href="https://doi.org/10.1109/IROS58592.2024.10801494">Embedded Valves for Distributed Control of Soft Pneumatic Actuators</a></h4>
                   <p>R. Zuo, M. Mehta, D.H. Han, D. Bruder</p> -->
@@ -132,9 +140,11 @@
             
               
                
-              <div class="item aspect-ratio-16-9">
+              <div class="item">
               
-                <img  src="/assets/images/publications/chainlink.gif" alt="/assets/images/publications/chainlink.gif">
+                <div class="aspect-ratio-16-9">
+                  <img src="/assets/images/publications/chainlink.gif" alt="/assets/images/publications/chainlink.gif">
+                </div>
                 <div class="carousel-caption">
                   <h4><a target="_blank" href="/assets/pdfs/Bruder_The_Chain-Link_Actuator_Exploiting_the_Bending_Stiffness_of_McKibben_Artificial_Muscles_to_Achieve_Larger_Contraction_Ratios.pdf">The Chain-link Actuator: Exploiting the Bending Stiffness of McKibben Artificial Muscles to Achieve Larger Contraction Ratios</a></h4>
                   <!-- <p>D. Bruder, R. J. Wood</p> -->
@@ -208,12 +218,29 @@
       
       
       
-      
-      
-      
-      
         <h4>Publications</h4>
         
+      
+      <ul>
+        
+        <li> N. Velimirovic, C. D. Remy, D. Bruder. "Hybrid Membrane-Solenoid Valves for High-Flow, Precisely Controlled Soft Robotic Actuation". <i> IEEE Conference on Robotics and Automation (ICRA) (accepted). </i> 2026.
+          
+          
+          
+          
+        </li>
+      </ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       <ul>
         
@@ -303,8 +330,6 @@
 
 
 <!-- Auto generate the correct number of indicators in the carousel with JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 <script defer>
   document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector("#myCarousel");
@@ -313,8 +338,8 @@
 
     items.forEach((item, index) => {
       const indicator = document.createElement("li");
-      indicator.setAttribute("data-bs-target", "#myCarousel");
-      indicator.setAttribute("data-bs-slide-to", index);
+      indicator.setAttribute("data-target", "#myCarousel");
+      indicator.setAttribute("data-slide-to", index);
 
       if (index === 0) {
         indicator.classList.add("active"); // Set the first indicator as active

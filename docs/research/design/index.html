@@ -111,13 +111,35 @@
             
             
             
-            
-            
               
-              <div class="item active embed-responsive embed-responsive-16by9">
+              <div class="item active">
                 
               
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iK94eklABJI" allowfullscreen></iframe>
+                <div class="aspect-ratio-16-9">
+                  <iframe src="https://www.youtube.com/embed/iT-8C6RKSIA" allowfullscreen></iframe>
+                </div>
+                <!-- <div class="carousel-caption"> -->
+                  <!-- <h4><a target="_blank" href="https://doi.org/10.1109/LRA.2025.3610264">A Variable-Stiffness Robotic Link Based on Rotating-Rectangle Auxetic Structures for Safe Human-Robot Interaction</a></h4>
+                  <p>Y. Ma, D. Bruder</p> -->
+                <!-- </div> -->
+              </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+               
+              <div class="item">
+              
+                <div class="aspect-ratio-16-9">
+                  <iframe src="https://www.youtube.com/embed/iK94eklABJI" allowfullscreen></iframe>
+                </div>
                 <!-- <div class="carousel-caption"> -->
                   <!-- <h4><a target="_blank" href="https://www.science.org/stoken/author-tokens/ST-1618/full">Increasing the Payload Capacity of Soft Underactuated Robot Arms via Selective Joint Stiffening</a></h4>
                   <p>D. Bruder, M. Graule, C. Teeple, R.J. Wood</p> -->
@@ -130,9 +152,11 @@
             
               
                
-              <div class="item aspect-ratio-16-9">
+              <div class="item">
               
-                <img  src="/assets/images/publications/martin2022.png" alt="/assets/images/publications/martin2022.png">
+                <div class="aspect-ratio-16-9">
+                  <img src="/assets/images/publications/martin2022.png" alt="/assets/images/publications/martin2022.png">
+                </div>
                 <div class="carousel-caption">
                   <h4><a target="_blank" href="/assets/pdfs/Martin_A_Proprioceptive_Method_for_Soft_Robots_Using_Inertial_Measurement_Units.pdf">A Proprioceptive Method for Soft Robots using Inertial Measurement Units</a></h4>
                   <!-- <p>Y.J. Martin, D. Bruder, R.J. Wood</p> -->
@@ -211,6 +235,34 @@
       
       <ul>
         
+        <li> S. Jamal, R. Zheng, D. Bruder. "Proprioceptive Origami Sleeves Using Embedded Fold Sensors". <i> IEEE-RAS International Conference on Soft Robotics (RoboSoft). </i> 2026.
+          
+          
+          
+          
+        </li>
+      </ul>
+      
+      
+      
+      
+      
+      
+      <ul>
+        
+        <li> A. Nguyen, M. Li, D. Bruder. "A High-Payload Wall-Climbing Robot Using Passive Bistable Suction Cups". <i> IEEE Conference on Robotics and Automation (ICRA) (accepted). </i> 2026.
+          
+          
+          
+          
+        </li>
+      </ul>
+      
+      
+      
+      
+      <ul>
+        
         <li> R. Zuo,  D.H. Han, R. Li, S. Jamal, D. Bruder. "UMArm: Untethered, Modular, Wearable, Soft Pneumatic Arm". <i> (preprint). </i> 2025.
            [<a href="https://arxiv.org/abs/2505.11476" target="_blank">link</a>]
           
@@ -224,10 +276,10 @@
       
       <ul>
         
-        <li> Y. Ma, D. Bruder. "A Variable-Stiffness Robotic Link Based on Rotating-Rectangle Auxetic Structures for Safe Human-Robot Interaction". <i> IEEE Robotics and Automation Letters (Accepted). </i> 2025.
+        <li> Y. Ma, D. Bruder. "A Variable-Stiffness Robotic Link Based on Rotating-Rectangle Auxetic Structures for Safe Human-Robot Interaction". <i> IEEE Robotics and Automation Letters. </i> 2025.
            [<a href="https://doi.org/10.1109/LRA.2025.3610264" target="_blank">link</a>]
           
-          
+           [<a href="https://youtu.be/iT-8C6RKSIA" target="_blank">video</a>]
           
         </li>
       </ul>
@@ -314,8 +366,6 @@
 
 
 <!-- Auto generate the correct number of indicators in the carousel with JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 <script defer>
   document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector("#myCarousel");
@@ -324,8 +374,8 @@
 
     items.forEach((item, index) => {
       const indicator = document.createElement("li");
-      indicator.setAttribute("data-bs-target", "#myCarousel");
-      indicator.setAttribute("data-bs-slide-to", index);
+      indicator.setAttribute("data-target", "#myCarousel");
+      indicator.setAttribute("data-slide-to", index);
 
       if (index === 0) {
         indicator.classList.add("active"); // Set the first indicator as active
