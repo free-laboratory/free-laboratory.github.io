@@ -1,5 +1,5 @@
 Name,Show,Tag,Detailed Page Name,Title,Description,Image,Additional HTML input,Comment,TYPE,Website
-Daniel Bruder,TRUE,bruderd,dan_bruder,"Assistant Professor, Mechanical Engineering",,bruderd.jpg,,,A_Prof,https://danielbruder.com
+Daniel Bruder,TRUE,bruderd,dan_bruder,"Assistant Professor, Mechanical Engineering",,bruderd.jpg,,,A_Prof,
 Audrey Sedal,FALSE,asedal,audrey_sedal,"PhD Student, Mechanical Engineering",Audrey is a PhD Candidate in Mechanical Engineering with an SB in Mechanical Engineering at the Massachusetts Institute of Technology. She is interested in mechanics with a focus toward its applications in modeling soft robots.,asedal.jpg,,,C_PhD,
 Fake Ugrad,FALSE,fake_ugrad,,"Undergraduate Student, Mechanical Engineering",,missing.png,,,E_Ugrad,
 Fake Phd,FALSE,fake_phd,,"PhD Student, Mechanical Engineering",,missing.png,,,C_PhD,
