@@ -1,6 +1,8 @@
 Show,Tags,Type,Title,Description,Location,Alt
-TRUE,pdholmes,1_photo,Patrick Return to the Homeland,Look at this guy. What a guy.,guinesspat.jpg,guinesspat
-TRUE,ramv,1_photo,This is Ram,"This is Ram, the leader of Roahmlab.",ram.png,ramfb
+FALSE,pdholmes,1_photo,Patrick Return to the Homeland,Look at this guy. What a guy.,guinesspat.jpg,guinesspat
+FALSE,ramv,1_photo,This is Ram,"This is Ram, the leader of Roahmlab.",ram.png,ramfb
 FALSE,bruderd,1_photo,This Man is Excited!,I wonder what he is excited about!,excited.gif,excited
-FALSE,sdanfort,2_video,"Whoa, Cool Video!",This is a video. Does it play for you?,https://www.youtube.com/embed/Y202qmb24xI,yourstable
-TRUE,,1_photo,FREE Lab,"The FREE (Functional Robotics for Every Environment) Lab seeks to actualize robots that are capable of deftly and safely operating in real-world unstructured environments. Our research draws on tools and concepts from mechanics to understand the relationships between structure, force and motion, control theory to analyze and influence the behavior of dynamical systems, optimization to make decisions that balance goals and tradeoffs, and machine learning to extract useful information from data. Our research efforts combine modeling, design, and control, and can broadly be divided into the following three thrusts: Mechanisms, Algorithms, and Embodied Systems.",logo_simple_annotated.png,overview
+FALSE,sdanfort,2_video,"Whoa, Cool Video!",This is a video. Does it play for you?,https://www.youtube.com/embed/iT-8C6RKSIA,yourstable
+TRUE,,1_photo,,"The FREE (Functional Robotics for Every Environment) Lab seeks to actualize robots that are capable of deftly and safely operating in real-world unstructured environments. Our research draws on tools and concepts from mechanics to understand the relationships between structure, force and motion, control theory to analyze and influence the behavior of dynamical systems, optimization to make decisions that balance goals and tradeoffs, and machine learning to extract useful information from data. Our research efforts combine modeling, design, and control, and can broadly be divided into the following three thrusts: Mechanisms, Algorithms, and Embodied Systems.",logo_simple_annotated.png,overview
+TRUE,zuorunze,1_photo,,Ph.D. student Runze Zuo wins third place in the best poster contest at the 2025 Midwest Robotics Workshop (MWRW) in Chicago.,Runze_MWRW25.jpeg,
+TRUE,,1_photo,,FREE Lab at the 2024 Midwest Robotics Workshop (MWRW),MWRW24.jpeg,

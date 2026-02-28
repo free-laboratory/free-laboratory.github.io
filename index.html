@@ -26,7 +26,7 @@ title: Home
 <!-- Carousel to show off some lab highlights -->
 <div style="display:none"> <!-- Remove this when you want carousel back -->
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+  <div id="myCarousel" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000" data-pause="hover">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -38,8 +38,10 @@ title: Home
     <div class="carousel-inner">
 
       <div class="item active">
-        <img class="center-block" src="/assets/images/title.png" alt="FREE Lab" style="height:640px;">
-        <div class="custom-caption">
+        <div class="home-carousel-media">
+          <img class="center-block" src="/assets/images/title.png" alt="FREE Lab">
+        </div>
+        <div class="home-carousel-caption">
           <h3>Roahm Lab</h3>
           <p>Optimization is cool!</p>
         </div>
@@ -49,17 +51,21 @@ title: Home
         {% if slide.Type == "1_photo" and slide.Show == "TRUE" %}
           {% assign imageLoc = "/assets/images/homepage/" | append: slide.Location %}
           <div class="item">
-            <img class="center-block" src="{{ imageLoc }}" alt="{{ imageLoc }}" style="height:640px;">
-            <div class="custom-caption">
+            <div class="home-carousel-media">
+              <img class="center-block" src="{{ imageLoc }}" alt="{{ slide.Title }}">
+            </div>
+            <div class="home-carousel-caption">
               <h3>{{ slide.Title }}</h3>
               <p>{{ slide.Description }}</p>
             </div>
           </div>
         {% endif %}
         {% if slide.Type == "2_video" and slide.Show == "TRUE" %}
-        <div class="item embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="{{ slide.Location }}" allowfullscreen></iframe>
-          <div class="custom-caption">
+        <div class="item">
+          <div class="home-carousel-media">
+            <iframe src="{{ slide.Location }}" allowfullscreen></iframe>
+          </div>
+          <div class="home-carousel-caption">
             <h3>{{ slide.Title }}</h3>
             <p>{{ slide.Description }}</p>
           </div>
