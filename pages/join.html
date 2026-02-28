@@ -1,0 +1,46 @@
+---
+layout: default
+title: Join
+permalink: /join/
+---
+
+<!-- Current Opportunites and Solicitations -->
+<!-- <div style="display:none"> Suppresses this feature for now -->
+{% assign projects = site.data.opportunities | sort: "deadline" %}
+{% assign projects_exist = false %}
+
+<div class="container">
+<h3>Current Opportunites</h3>
+{% for project in projects %}
+  {% if project.Show == "TRUE" %}
+    {% assign projects_exist = true %}
+    <div class="row" style="border: 2px solid #000000; border-radius: 12px; padding: 10px 15px; background-color: #eeeeee; display: flex" >
+      <div class="col-sm-9">
+        <h4>{{ project.title }}</h4>
+        <p><b>Description:</b> {{ project.description }}</p>
+        <p><b>Desired skills:</b> {{ project.skills }}</p>
+        <p><b>Desired start date:</b> {{ project.start }}</p>
+        <p><b>Hours:</b> {{ project.hours }}</p>
+        <p><b>Compensation:</b> {{ project.compensation }}</p>
+        <p><b>Application deadline:</b> {{ project.deadline }}</p>
+        <p>For questions, contact {{ project.contact }} ({{ project.email}}) </p>
+        <h5><a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>APPLY HERE</b></a></h5>
+      </div>
+      <div class="col-sm-3 op-col-img">
+        {% assign imageLoc = "/assets/images/opportunities/" | append: project.image %}
+          <img src="{{ imageLoc }}" alt="{{ person.Tag }}" class="img-responsive">
+      </div>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+{% if projects_exist == false %}
+  <div class="row">
+    <div class="col-sm-12">
+      <p>We aren't soliciting applications for any specific projects at the moment, but if you would like to be considered for future openings please fill out the <a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>FREE Lab Interest Form</b></a>.</p>
+    </div>
+  </div>
+{% endif %}
+</div>
+
+<!-- </div> Remove when ready to inveil this feature -->
