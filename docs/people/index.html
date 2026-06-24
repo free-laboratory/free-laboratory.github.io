@@ -70,84 +70,132 @@
     <main>
       
 
+<style>
+/* Responsive two-column layout for each people category on this page. */
+.people-category {
+  margin-bottom: 40px;
+}
+
+/* Use bootstrap row gutters, and keep each card padded inside its column. */
+.people-grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.people-grid > .col-xs-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Basic card styling for the person entries. */
+.people-card {
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  min-height: 100%;
+  background-color: #ffffff;
+}
+.people-card h3,
+.people-card h4,
+.people-card h5 {
+  margin-top: 0;
+}
+
+/* Keep a little breathing room inside each card. */
+.people-card + .people-card {
+  margin-top: 20px;
+}
+
+/* Responsive image block inside each card. */
+.person-image {
+  margin-bottom: 12px;
+}
+</style>
+
 <div class="container">
 
 <!-- Professors -->
-
-  
-
-  
-
-  
-
-  
-
-  
-    <div class="row">
+<div class="people-category">
+  <h3>Professor</h3>
+  <div class="row people-grid">
+    
       
-      <div class="col-sm-3">
-        <img src="/assets/images/people/bruderd.jpg" alt="bruderd" width=100%>
-      </div>
+    
       
-      <div class="col-sm-6">
-        <h3><a href=" /people/bruderd ">Daniel Bruder</a></h3>
-        <h4>Assistant Professor, Mechanical Engineering</h4>
-        <h5>bruderd@umich.edu</h5>
-        <p></p>
-      </div>
-    </div>
-    <br>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
+    
+      
+    
+      
+    
+      
+        <div class="col-xs-12 col-sm-6">
+          <div class="people-card">
+            <div class="row">
+              
+              <div class="col-xs-12 col-sm-4 person-image">
+                <img src="/assets/images/people/bruderd.jpg" alt="bruderd" width="100%">
+              </div>
+              
+              <div class="col-xs-12 col-sm-8">
+                <h3><a href="/people/bruderd">Daniel Bruder</a></h3>
+                <h4>Assistant Professor, Mechanical Engineering</h4>
+                <h5>bruderd@umich.edu</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
 
 <!-- PostDocs -->
 
@@ -246,63 +294,79 @@
   
 
   
-   <h3>PhD Students</h3> 
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/richieli.jpg" alt="richieli" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/richieli ">Richard Li</a></h3>
-        <h4>PhD Student, Mechanical Engineering</h4>
-        <h5>richieli@umich.edu</h5>
-        <p></p>
-      </div>
-    </div>
-    <br>
-  
-
-  
-
-  
-  
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/zuorunze.jpg" alt="zuorunze" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" https://www.runzezuo.com ">Runze Zuo</a></h3>
-        <h4>PhD Student, Mechanical Engineering</h4>
-        <h5>zuorunze@umich.edu</h5>
-        <p></p>
+    
+      <div class="people-category">
+        <h3>PhD Students</h3>
+        <div class="row people-grid">
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/richieli.jpg" alt="richieli" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/richieli">Richard Li</a></h3>
+            <h4>PhD Student, Mechanical Engineering</h4>
+            <h5>richieli@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
   
 
   
 
   
-
-  
-  
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/saimaj.jpg" alt="saimaj" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/saimaj ">Saima Jamal</a></h3>
-        <h4>PhD Student, Mechanical Engineering</h4>
-        <h5>saimaj@umich.edu</h5>
-        <p></p>
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/zuorunze.jpg" alt="zuorunze" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="https://www.runzezuo.com">Runze Zuo</a></h3>
+            <h4>PhD Student, Mechanical Engineering</h4>
+            <h5>zuorunze@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
+  
+
+  
+
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/saimaj.jpg" alt="saimaj" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/saimaj">Saima Jamal</a></h3>
+            <h4>PhD Student, Mechanical Engineering</h4>
+            <h5>saimaj@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -320,6 +384,10 @@
   
 
   
+
+
+        </div>
+      </div>
 
 
 <!-- Master students -->
@@ -346,93 +414,113 @@
   
 
   
-   <h3>Masters Students</h3> 
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/lnking.jpg" alt="lnking" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/lnking ">Lamar King</a></h3>
-        <h4>Masters Student, Engineering</h4>
-        <h5>lnking@umich.edu</h5>
-        <p></p>
-      </div>
-    </div>
-    <br>
-  
-
-  
-
-  
-  
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/missing.png" alt="naikewu" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/naikewu ">Naike Wu</a></h3>
-        <h4>Masters Student, Engineering</h4>
-        <h5>naikewu@umich.edu</h5>
-        <p></p>
+    
+      <div class="people-category">
+        <h3>Masters Students</h3>
+        <div class="row people-grid">
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/lnking.jpg" alt="lnking" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/lnking">Lamar King</a></h3>
+            <h4>Masters Student, Engineering</h4>
+            <h5>lnking@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
   
 
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/missing.png" alt="shaanv" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/shaanv ">Shaandili Vajpai</a></h3>
-        <h4>Masters Student, Mechanical Engineering</h4>
-        <h5>shaanv@umich.edu</h5>
-        <p></p>
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/missing.png" alt="naikewu" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/naikewu">Naike Wu</a></h3>
+            <h4>Masters Student, Engineering</h4>
+            <h5>naikewu@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
   
 
   
+
   
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/missing.png" alt="shruz" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/shruz ">Shrujal Zala</a></h3>
-        <h4>Masters Student, Mechanical Engineering</h4>
-        <h5>shruz@umich.edu</h5>
-        <p></p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/missing.png" alt="shaanv" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/shaanv">Shaandili Vajpai</a></h3>
+            <h4>Masters Student, Mechanical Engineering</h4>
+            <h5>shaanv@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/missing.png" alt="shruz" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/shruz">Shrujal Zala</a></h3>
+            <h4>Masters Student, Mechanical Engineering</h4>
+            <h5>shruz@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -446,6 +534,10 @@
   
 
   
+
+
+        </div>
+      </div>
 
 
 <!-- Undergrad students -->
@@ -454,63 +546,75 @@
   
 
   
-   <h3>Undergraduate Students</h3> 
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/andyng.jpg" alt="andyng" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/andyng ">Andy Nguyen</a></h3>
-        <h4>Undergraduate Student, Engineering</h4>
-        <h5>andyng@umich.edu</h5>
-        <p></p>
-      </div>
-    </div>
-    <br>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-    <div class="row">
-      
-      <div class="col-sm-3">
-        <img src="/assets/images/people/zhangqy.jpg" alt="zhangqy" width=100%>
-      </div>
-      
-      <div class="col-sm-6">
-        <h3><a href=" /people/zhangqy ">Qian Yun Zhang</a></h3>
-        <h4>Undergraduate Student, Engineering</h4>
-        <h5>zhangqy@umich.edu</h5>
-        <p></p>
+    
+      <div class="people-category">
+        <h3>Undergraduate Students</h3>
+        <div class="row people-grid">
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/andyng.jpg" alt="andyng" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/andyng">Andy Nguyen</a></h3>
+            <h4>Undergraduate Student, Engineering</h4>
+            <h5>andyng@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/zhangqy.jpg" alt="zhangqy" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/zhangqy">Qian Yun Zhang</a></h3>
+            <h4>Undergraduate Student, Engineering</h4>
+            <h5>zhangqy@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -540,6 +644,10 @@
   
 
   
+
+
+        </div>
+      </div>
 
 
 <!-- Alumni -->
@@ -547,23 +655,17 @@
 
   
     
-      <h3>Alumni</h3>
-      
+      <div class="people-category">
+        <h3>Alumni</h3>
+        <div class="row people-grid">
+        
     
-    <div class="row">
-      <!-- <div class="col-sm-12">
+    <div class="col-xs-12">
+      <div class="people-card">
         
-          <h4>Anderson Corum &nbsp;&nbsp; - &nbsp;&nbsp; Undergraduate Student, Mechanical Engineering</h4>
+          <h4>Anderson Corum - Undergraduate Student, Mechanical Engineering</h4>
         
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Anderson Corum</h4>
       </div>
-      <div class="col-sm-9">
-        <h4>Undergraduate Student, Mechanical Engineering</h4>
-      </div>
-      
     </div>
   
 
@@ -573,20 +675,12 @@
 
   
     
-    <div class="row">
-      <!-- <div class="col-sm-12">
+    <div class="col-xs-12">
+      <div class="people-card">
         
-          <h4>Cayden Boll &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Mechanical Engineering</h4>
+          <h4>Cayden Boll - Masters Student, Mechanical Engineering</h4>
         
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Cayden Boll</h4>
       </div>
-      <div class="col-sm-9">
-        <h4>Masters Student, Mechanical Engineering</h4>
-      </div>
-      
     </div>
   
 
@@ -594,20 +688,12 @@
 
   
     
-    <div class="row">
-      <!-- <div class="col-sm-12">
+    <div class="col-xs-12">
+      <div class="people-card">
         
-          <h4>Dong Heon Han &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Mechanical Engineering</h4>
+          <h4>Dong Heon Han - Masters Student, Mechanical Engineering</h4>
         
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Dong Heon Han</h4>
       </div>
-      <div class="col-sm-9">
-        <h4>Masters Student, Mechanical Engineering</h4>
-      </div>
-      
     </div>
   
 
@@ -623,210 +709,133 @@
 
   
     
-    <div class="row">
-      <!-- <div class="col-sm-12">
+    <div class="col-xs-12">
+      <div class="people-card">
         
-          <h4><a href="https://cad2controlrobots.wordpress.com/">Mayank Navneet Mehta</a> &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Mechanical Engineering</h4>
+          <h4><a href="https://cad2controlrobots.wordpress.com/">Mayank Navneet Mehta</a> - Masters Student, Mechanical Engineering</h4>
         
-      </div> -->
-      
-        <div class="col-sm-3">
-          <h4><a href="https://cad2controlrobots.wordpress.com/">Mayank Navneet Mehta</a></h4>
+      </div>
+    </div>
+  
+
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Nikola Velimirovic - Visiting PhD Student, University of Stuttgart</h4>
+        
+      </div>
+    </div>
+  
+
+  
+
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Rudy Lee - Masters Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Russell Dickerson - Masters Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Ryan Zheng - Masters Student, Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Spencer Legresley - Undergraduate Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Tianhua Zou - Undergraduate Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Wenyue (Andy) Li - Undergraduate Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Yiteng Ma - Masters Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Zachary Wanger - Undergraduate Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+
         </div>
-        <div class="col-sm-9">
-          <h4>Masters Student, Mechanical Engineering</h4>
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Nikola Velimirovic &nbsp;&nbsp; - &nbsp;&nbsp; Visiting PhD Student, University of Stuttgart</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Nikola Velimirovic</h4>
       </div>
-      <div class="col-sm-9">
-        <h4>Visiting PhD Student, University of Stuttgart</h4>
-      </div>
-      
-    </div>
-  
-
-  
-
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Rudy Lee &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Rudy Lee</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Masters Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Russell Dickerson &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Russell Dickerson</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Masters Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Ryan Zheng &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Ryan Zheng</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Masters Student, Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-
-  
-
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Spencer Legresley &nbsp;&nbsp; - &nbsp;&nbsp; Undergraduate Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Spencer Legresley</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Undergraduate Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Tianhua Zou &nbsp;&nbsp; - &nbsp;&nbsp; Undergraduate Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Tianhua Zou</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Undergraduate Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Wenyue (Andy) Li &nbsp;&nbsp; - &nbsp;&nbsp; Undergraduate Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Wenyue (Andy) Li</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Undergraduate Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Yiteng Ma &nbsp;&nbsp; - &nbsp;&nbsp; Masters Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Yiteng Ma</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Masters Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
-  
-    
-    <div class="row">
-      <!-- <div class="col-sm-12">
-        
-          <h4>Zachary Wanger &nbsp;&nbsp; - &nbsp;&nbsp; Undergraduate Student, Mechanical Engineering</h4>
-        
-      </div> -->
-      
-      <div class="col-sm-3">
-        <h4>Zachary Wanger</h4>
-      </div>
-      <div class="col-sm-9">
-        <h4>Undergraduate Student, Mechanical Engineering</h4>
-      </div>
-      
-    </div>
-  
-
 
 
 </div>
