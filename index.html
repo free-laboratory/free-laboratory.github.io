@@ -136,7 +136,7 @@ title: Home
   {% if project.Show == "TRUE" %}
     {% assign projects_exist = true %}
     <div class="row" style="border: 2px solid #000000; border-radius: 12px; padding: 10px 15px; background-color: #eeeeee; display: flex" >
-      <div class="col-sm-9">
+      <div class="col-sm-6">
         <h4>{{ project.title }}</h4>
         <p><b>Description:</b> {{ project.description }}</p>
         <p><b>Desired skills:</b> {{ project.skills }}</p>
@@ -147,7 +147,7 @@ title: Home
         <p>For questions, contact {{ project.contact }} ({{ project.email}}) </p>
         <h5><a href="https://umich.qualtrics.com/jfe/form/SV_bK6PjJXgBhOHNZk" target="_blank"><b>APPLY HERE</b></a></h5>
       </div>
-      <div class="col-sm-3 op-col-img">
+      <div class="col-sm-6 op-col-img">
         {% assign imageLoc = "/assets/images/opportunities/" | append: project.image %}
           <img src="{{ imageLoc }}" alt="{{ person.Tag }}" class="img-responsive">
       </div>
