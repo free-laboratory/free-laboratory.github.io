@@ -16,6 +16,15 @@ permalink: /people/
 .people-grid {
   margin-left: -15px;
   margin-right: -15px;
+  /* Flex instead of floats, so cards of slightly different heights can't
+     snag on each other and leave gaps in the grid. */
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Bootstrap's .row clearfix pseudo-elements would become flex items. */
+.people-grid:before,
+.people-grid:after {
+  display: none;
 }
 .people-grid > .col-xs-12 {
   padding-left: 15px;

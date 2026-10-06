@@ -80,6 +80,15 @@
 .people-grid {
   margin-left: -15px;
   margin-right: -15px;
+  /* Flex instead of floats, so cards of slightly different heights can't
+     snag on each other and leave gaps in the grid. */
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Bootstrap's .row clearfix pseudo-elements would become flex items. */
+.people-grid:before,
+.people-grid:after {
+  display: none;
 }
 .people-grid > .col-xs-12 {
   padding-left: 15px;
@@ -127,6 +136,8 @@
       
     
       
+    
+      
         <div class="col-xs-12 col-sm-6">
           <div class="people-card">
             <div class="row">
@@ -144,6 +155,18 @@
             </div>
           </div>
         </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       
@@ -258,10 +281,28 @@
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 <!-- PhD students -->
 
+
+  
+
+  
 
   
 
@@ -305,6 +346,32 @@
         <div class="row">
           
           <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/palejoag.jpeg" alt="palejoag" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/palejoag">Pablo Alejo-Aguirre</a></h3>
+            <h4>PhD Student, Mechanical Engineering</h4>
+            <h5>palejoag@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
             <img src="/assets/images/people/richieli.jpg" alt="richieli" width="100%">
           </div>
           
@@ -317,6 +384,8 @@
         </div>
       </div>
     </div>
+  
+
   
 
   
@@ -385,6 +454,8 @@
 
   
 
+  
+
 
         </div>
       </div>
@@ -392,6 +463,16 @@
 
 <!-- Master students -->
 
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -425,30 +506,6 @@
         <div class="row">
           
           <div class="col-xs-12 col-sm-4 person-image">
-            <img src="/assets/images/people/lnking.jpg" alt="lnking" width="100%">
-          </div>
-          
-          <div class="col-xs-12 col-sm-8">
-            <h3><a href="/people/lnking">Lamar King</a></h3>
-            <h4>Masters Student, Engineering</h4>
-            <h5>lnking@umich.edu</h5>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
-  
-
-  
-    
-    
-    <div class="col-xs-12 col-sm-6">
-      <div class="people-card">
-        <div class="row">
-          
-          <div class="col-xs-12 col-sm-4 person-image">
             <img src="/assets/images/people/missing.png" alt="naikewu" width="100%">
           </div>
           
@@ -461,6 +518,12 @@
         </div>
       </div>
     </div>
+  
+
+  
+
+  
+
   
 
   
@@ -502,25 +565,7 @@
   
 
   
-    
-    
-    <div class="col-xs-12 col-sm-6">
-      <div class="people-card">
-        <div class="row">
-          
-          <div class="col-xs-12 col-sm-4 person-image">
-            <img src="/assets/images/people/missing.png" alt="shruz" width="100%">
-          </div>
-          
-          <div class="col-xs-12 col-sm-8">
-            <h3><a href="/people/shruz">Shrujal Zala</a></h3>
-            <h4>Masters Student, Mechanical Engineering</h4>
-            <h5>shruz@umich.edu</h5>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
+
   
 
   
@@ -572,7 +617,25 @@
   
 
   
-
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/ahusaini.png" alt="ahusaini" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/ahusaini">Askari Husaini</a></h3>
+            <h4>Undergraduate Student, Mechanical Engineering</h4>
+            <h5>ahusaini@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -583,6 +646,56 @@
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/holdenjl.png" alt="holdenjl" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/holdenjl">Holden Liu</a></h3>
+            <h4>Undergraduate Student, Mechanical Engineering</h4>
+            <h5>holdenjl@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/imekaru.png" alt="imekaru" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/imekaru">Isaac Mekaru</a></h3>
+            <h4>Undergraduate Student, Mechanical Engineering</h4>
+            <h5>imekaru@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -618,7 +731,49 @@
   
 
   
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/reliclaw.png" alt="reliclaw" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/reliclaw">Relic Law</a></h3>
+            <h4>Undergraduate Student, Mechanical Engineering</h4>
+            <h5>reliclaw@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/rileyeg.png" alt="rileyeg" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/rileyeg">Riley Gauthier</a></h3>
+            <h4>Undergraduate Student, Mechanical Engineering</h4>
+            <h5>rileyeg@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -637,6 +792,30 @@
 
   
 
+  
+
+  
+
+  
+    
+    
+    <div class="col-xs-12 col-sm-6">
+      <div class="people-card">
+        <div class="row">
+          
+          <div class="col-xs-12 col-sm-4 person-image">
+            <img src="/assets/images/people/weiyishi.png" alt="weiyishi" width="100%">
+          </div>
+          
+          <div class="col-xs-12 col-sm-8">
+            <h3><a href="/people/weiyishi">Weiyi Shi</a></h3>
+            <h4>Undergraduate Student, Mechanical Engineering</h4>
+            <h5>weiyishi@umich.edu</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
   
@@ -667,6 +846,8 @@
         
       </div>
     </div>
+  
+
   
 
   
@@ -708,6 +889,19 @@
   
 
   
+
+  
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Lamar King - Masters Student, Engineering</h4>
+        
+      </div>
+    </div>
+  
+
+  
     
     <div class="col-xs-12">
       <div class="people-card">
@@ -729,6 +923,12 @@
         
       </div>
     </div>
+  
+
+  
+
+  
+
   
 
   
@@ -775,6 +975,15 @@
   
 
   
+    
+    <div class="col-xs-12">
+      <div class="people-card">
+        
+          <h4>Shrujal Zala - Masters Student, Mechanical Engineering</h4>
+        
+      </div>
+    </div>
+  
 
   
     
@@ -798,6 +1007,8 @@
         
       </div>
     </div>
+  
+
   
 
   
